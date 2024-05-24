@@ -16,13 +16,13 @@ authors_set.add("Alice Johnson")
 books_dict["Machine Learning Basics"] = "Alice Johnson"
 
 # Display all the books
-print("List of Books:")
+print("List of Books:") # Book stored should be displayed using a loop
 for book in books_list:
     print(book)
 
 # Search for a book
-search_title = input("Enter the title of the book to search: ")
-if search_title in books_list:
+search_title = input("Enter the title of the book to search: ") 
+if search_title in books_list:# this code will check if the entered title exist in the books_list
     print(f"Book found! Author: {books_dict[search_title]}")
 else :
     print("Book not found!")
